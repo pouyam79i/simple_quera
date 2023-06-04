@@ -1,0 +1,27 @@
+# Job Builder Main HTTP server information!
+server:
+  ip:   "localhost"
+  port: "8086"
+
+# RabbitMQ configuration
+rabbitMQ:
+  ip:     "localhost"
+  port:   "5656"
+  q_name: "myRabbit3"
+
+# MY SQL server to save Query Strings!
+mysql:  
+  ip:       ""
+  port:     ""
+  user:     ""
+  password: ""
+  database: ""
+  table:    ""
+
+# S3 database where I should read raw code + input files.
+s3:
+  input_bucket: ""
+  code_bucket:  ""
+  host_name:    ""
+  secret_key:   ""
+  access_key:   ""

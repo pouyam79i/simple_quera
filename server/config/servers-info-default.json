@@ -1,0 +1,6 @@
+{
+    "name"  : "My First Server",
+    "ip"    : "localhost",
+    "port"  : "8085",
+    "debug" : true
+}

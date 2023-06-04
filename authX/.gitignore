@@ -1,0 +1,8 @@
+# Ignore go sum
+go.sum
+
+# Ignore main config file
+config.yml
+
+# Ignore changing sql
+db/*.sql

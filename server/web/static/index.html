@@ -1,0 +1,124 @@
+<!--
+     This document is created by Pouya Mohammadi 
+     for cloud computing course at AUT - spring 2023.
+     I hope this content is useful to be inspired by
+     next gen. students
+     Feel free to learn from it.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./ace-highlighter/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <style type="text/css" media="screen">
+    </style> -->
+    <!-- adding title and favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='./assets/fav.png' />
+    <title>CodeR</title>
+</head>
+<body>
+    <!-- Top Navigate Bar -->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <!-- TODO: update this link to sign in page -->
+        <a style="float: right;" onclick="location.href='#signin'" id="singin_btn">Sign In</a>
+    </div>
+
+    <!-- TODO: Complete Home Body -->
+    <div id="home" class="home">
+        <!-- topic - page header -->
+        <div class="header">
+            <div class="headline">
+                Code Runner
+            </div>
+            <div class="subheadline">
+                test your code and get results
+            </div>
+        </div>
+
+            <!-- code box title -->
+            <div class="title" onclick="importText('editor1', '.py,.cpp,.c,.go')">
+                Fast cpp code box
+            </div>
+
+            <!-- code box cpp -->      
+        <div>
+        <!-- editor for code -->
+            <div class="editor" id="editor1">#this is a sample app
+print("Enter 2 line plz")
+lineOne = str(input())
+lineTwo = str(input())
+
+totaly = lineOne + "\n" + lineTwo
+print("You have entered below lines")
+print(totaly)</div>
+        </div>
+                       
+
+            <!-- input box title -->
+            <div class="title2" onclick="importText('editor2','.txt')">
+                Put your app input here
+            </div>
+
+            <!-- input text box  -->
+            <div>
+                <!-- editor for text -->
+                <div class="editor" id="editor2" style="height: 200px;">example input 1
+example input 2</div>
+            </div>
+
+
+    </div>
+
+    <div class="submitFC">
+        <button  id="submit_files" onclick="upload()">
+            Upload Files
+        </button>
+    </div>
+
+
+    <!-- TODO: Complete About Body -->
+    
+
+    <!-- Pop up - sign in page -->
+    <div id="signin" class="overlay">
+        <div class="popup">
+          <img
+            src="./assets/fav.png"
+            alt="react-book"/>
+            <h1>Welcome to CodeR </h1>
+            <form action="" id="loginForm" class="form">
+            <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" id="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="psw" required>
+                <br>
+                <button type="submit" onclick="singInUP()">Sign In</button>
+                <button type="reset" onclick="location.href='#'" id ="close_sing_in">Close</button>
+            </div>
+            </form>
+        </h1>
+    </div>
+
+    <!-- This plugin is used for online code editor! -->
+    <script>
+        var editor1 = ace.edit("editor1");
+        editor1.setTheme("ace/theme/nord_dark");
+        editor1.session.setMode("ace/mode/python");
+
+        var editor2 = ace.edit("editor2");
+        editor2.setTheme("ace/theme/nord_dark");
+        editor2.session.setMode("ace/mode/text");
+
+    
+
+    </script>
+</body>
+</html>

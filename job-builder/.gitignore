@@ -1,0 +1,5 @@
+# Ignoring my own config file! You can use template!
+config/config.yml
+
+# Ignore go.sum
+go.sum

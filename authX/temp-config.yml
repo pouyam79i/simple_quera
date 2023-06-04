@@ -1,0 +1,17 @@
+# this is ip:port for your authx api - let it be :)
+server:
+  ip:   "localhost"
+  port: "8090"
+
+# this is for db connection!
+db:
+  ip:       "localhost"
+  port:     ""
+  username: ""
+  password: ""
+  database: ""
+  table:    ""
+
+# Use this key for communication with authx api
+apiConnections:
+  mainKey: ""

@@ -1,2 +1,5 @@
-# simple_quera
-Here is the code of my HW1 from cloud computing course. Trying to build a simple code runner like quera.org :) Since the code is not complete enough I will try to debug it
+# TODO
+    1- complete job scheduler
+    2- add mailer api
+    3- connect JS to JE through rabbitMQ using its cloud version
+    4- add S3 uploader and downloader
